@@ -9,34 +9,18 @@ const config = {
 
 const client = axios.create(config);
 
-export function getPeople(ctx) {
-  return client.get("/people").then(({ data }) => {
-    ctx.setState({
-      people: data
-    });
-  });
+export function getPeople() {
+  return client.get("/people");
 }
 
-export function updatePeople(id, person) {
-  return client.patch(`/people/${id}`, person);
+export function updatePeople(id, data) {
+  return client.patch(`/people/${id}`, data);
 }
 
-export function createPeople(person) {
-  return client.post(`/people`, person);
+export function createPeople(data) {
+  return client.post("/people/", data);
 }
 
-export function getPosts(ctx) {
-  return client.get("/posts").then(({ data }) => {
-    ctx.setState({
-      posts: data
-    });
-  });
-}
-
-export function updatePosts(id, data) {
-  return client.patch(`/posts/${id}`, data);
-}
-
-export function createPosts(data) {
-  return client.post("/posts/", data);
+export function deletePeople(id) {
+  return client.delete(`/people/${id}`);
 }

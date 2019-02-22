@@ -1,1 +1,9 @@
-{"people":[{"name":"@hamatti","id":1,"age":31}],"posts":[]}
+{
+  "people": [
+    {
+      "name": "hamatti",
+      "age": 31,
+      "id": 1
+    }
+  ]
+}

@@ -31,7 +31,7 @@ If our `backend/db.json` looks like this:
 
 you can access the data via following endpoints
 
-| Top level key in JSON | Method | API endpoint | Parameters                |
+| Top level key in JSON | Method | API endpoint | Payload                   |
 | --------------------- | ------ | ------------ | ------------------------- |
 | people                | GET    | /people/     |                           |
 | people                | POST   | /people/     | JSON of the saved content |

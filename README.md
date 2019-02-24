@@ -14,4 +14,4 @@ This starter kit ships with `json-server` and simple JSON backend, [documented h
 
 You can generate new API endpoints and "database" storage with `npm run generateAPI [model name]` where `[model name]` should be a plural of your object noun. For example, to save a collection of posts, you run `npm run generateAPI posts`.
 
-This will add `"posts": []` into `backend/db.json` storage as well as `getPosts(ctx)`, `updatePosts(id, data)`, and `createPosts(data)` functions in `apiClient.js`.
+This will add `"posts": []` into `backend/db.json` storage as well as `getPosts(ctx)`, `updatePosts(id, data)`, `deletePosts(id)`, and `createPosts(data)` functions in `apiClient.js`.
